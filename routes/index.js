@@ -6,6 +6,17 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* GET regist page. */
+router.get('/regist', function(req, res) {
+    res.render('regist', { title: 'regist' });
+});
+
+/* GET regist page. */
+router.get('/item', function(req, res) {
+    res.render('item', { title: 'item' });
+});
+
+
 /* GET Hello World page. */
 router.get('/helloworld', function(req, res) {
     res.render('helloworld', { title: 'Hello, World!' });
