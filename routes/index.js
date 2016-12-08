@@ -11,11 +11,20 @@ router.get('/regist', function(req, res) {
     res.render('regist', { title: 'regist' });
 });
 
-/* GET regist page. */
+/* GET item page. */
 router.get('/item', function(req, res) {
     res.render('item', { title: 'item' });
 });
 
+/* GET userinfo page. */
+router.get('/userinfo', function(req, res) {
+    res.render('userinfo', { title: 'userinfo' });
+});
+
+/* GET userregist page. */
+router.get('/userregist', function(req, res) {
+    res.render('userregist', { title: 'userregist' });
+});
 
 /* GET Hello World page. */
 router.get('/helloworld', function(req, res) {
