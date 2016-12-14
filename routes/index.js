@@ -6,6 +6,26 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* GET regist page. */
+router.get('/regist', function(req, res) {
+    res.render('regist', { title: 'regist' });
+});
+
+/* GET item page. */
+router.get('/item', function(req, res) {
+    res.render('item', { title: 'item' });
+});
+
+/* GET userinfo page. */
+router.get('/userinfo', function(req, res) {
+    res.render('userinfo', { title: 'userinfo' });
+});
+
+/* GET userregist page. */
+router.get('/userregist', function(req, res) {
+    res.render('userregist', { title: 'userregist' });
+});
+
 /* GET Hello World page. */
 router.get('/helloworld', function(req, res) {
     res.render('helloworld', { title: 'Hello, World!' });
